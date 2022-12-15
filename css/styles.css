@@ -1,0 +1,444 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:800,700,900);
+@import url(https://fonts.googleapis.com/css?family=Open Sans:600,400,300,300italic);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	line-height: 1;
+}
+body {
+	background: url("../img/map.jpg") no-repeat fixed center bottom / cover #a7937e;
+	flex-wrap: wrap;
+	font-size: 75%;
+}
+
+h1, h2, h3, p, li, td, th {
+	line-height: 1.7em;
+}
+h1, h2 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 800;
+}
+h1 {
+	font-size: 5.1em;
+	margin-bottom: 0.25em;
+}
+h2 {
+	font-size: 3em;
+	text-transform: uppercase;
+}
+h3 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.25em;
+	font-weight: 600;
+}
+ul {
+	list-style-type: square;
+	margin-left: 1.5em;
+}
+p, li, label {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+}
+a {
+	color: #cf000f;
+	display: inline-block;
+}
+
+#navPrimary {
+	background-color: #a7937e;
+	box-sizing: border-box;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+#navPrimary label {
+	color: #ecf0f1;
+	cursor: pointer;
+	text-align: center;
+}
+#navPrimary input[type=checkbox] {
+	left: -999em;
+	position: absolute;
+	top: -999em;
+}
+#navPrimary ul {
+	height: 0;
+	overflow: hidden;
+}
+#navPrimary label,
+#navPrimary a {
+	color: #131313;
+	display: block;
+	font-size: 1.35em;
+	height: 2em;
+	line-height: 2em;
+	text-decoration: none;
+}
+#navPrimary a:hover {
+	color: #ecf0f1
+}
+
+.bg-fixed {
+	display: none;
+}
+
+body > header {
+	background: url("../img/skyline.jpg") no-repeat fixed center top / cover #a7937e;
+	border: 1em solid #a7937e;
+	border-top: 3em solid #a7937e;
+	flex-basis: 100%;
+	min-height: 100vh;
+	padding-top: 3em;
+	text-align: center;
+}
+header #profilePic {
+	background: url("../img/profile.png") no-repeat scroll center top / cover;
+	border-radius: 125px;
+	display: inline-block;
+	height: 125px;
+	margin: 5vmin auto 0;
+	width: 125px;
+}
+header #profileDesc p {
+	color: #ecf0f1;
+	font-size: 2.55em;
+	text-shadow: 0 1px 1px #131313;
+}
+
+article,
+aside {
+	padding: 3em 1em 0;
+}
+article {
+	background-color: #ecf0f1;
+	border: 1em solid #ffffff;
+	flex-basis: 60%;
+}
+aside {
+	background-color: #131313;
+	border: 1em solid #000000;
+	color: #ECF0F1;
+	flex-basis: 40%;
+}
+#skills ul {
+	list-style: none;
+	margin: 0;
+}
+#skills meter {
+	background: none;
+	border-right: 1px solid #a7937e;
+	height: 15px;
+	margin-right: 15px;
+	width: 70px;
+}
+#skills meter::-moz-meter-bar {
+	background: none;
+}
+#skills meter:-moz-meter-optimum::-moz-meter-bar {
+	background: none;
+	background-color: #a7937e;
+}
+#skills meter::-webkit-meter-bar {
+	background: none;
+}
+#skills meter::-webkit-meter-optimum-value {
+	background: none;
+	background-color: #a7937e;
+}
+#skills meter span {
+	display: inline-block;
+}
+section {
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+article header,
+aside header,
+aside h2 {
+	flex-basis: 100%;
+}
+article > section,
+aside > section {
+	padding-bottom: 3em;
+}
+
+#CV section {
+	width: 95%;
+}
+#CV .cv-city {
+	font-style: italic;
+}
+#CV .cv-title::before {
+	content: "- ";
+}
+#CV section > section {
+	flex-basis: 100%;
+}
+#CV section > section:not(:last-child) {
+	margin-bottom: 2.5em;
+}
+#CV section > section > header {
+	align-items: baseline;
+	flex-wrap: wrap;
+	width: 100%;
+}
+#CV section > section > header ~ p {
+	margin-top: 0.85em;
+}
+#CV section > section > header * {
+	flex-basis: 50%;
+	font-size: 1.25em;
+}
+#CV section > section > p {
+	text-align: justify;
+}
+
+#portfolio {
+	background-color: transparent;
+	border: 0;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	padding-bottom: 50vh;
+}
+#portfolio h2 {
+	background-color: rgba(236, 240, 241, 0.85);
+	display: inline-block;
+	line-height: 1em;
+	text-align: center;
+	width: 100%;
+}
+#portfolio h3 {
+	margin-bottom: .25em;
+}
+#portfolio header {
+	box-sizing: content-box;
+	padding: 1.5em 0;
+	text-align: center;
+}
+#portfolio header > h3 {
+	background-color: rgba(236, 240, 241, 0.85);
+	width: 98%;
+}
+#portfolio section {
+	padding: 0;
+}
+#portfolio section section {
+	flex-basis: auto;
+	padding-bottom: 1em;
+	text-align: justify;
+	width: 100%;
+}
+#portfolio .portfolio-box {
+	background-color: rgba(236, 240, 241, 0.95);
+	box-sizing: content-box;
+	margin: auto;
+	padding: 0.5em 1em 1em;
+	text-align: center;
+}
+
+figure,
+figure + p {
+	margin-bottom: 1.5em;
+}
+figure img,
+figure object,
+figure embed,
+figure video {
+	display: block;
+	max-width: 100%;
+}
+figure a {
+	box-shadow: 0 0 1px 0 rgba(19, 19, 19, 0.4);
+	color: #ecf0f1;
+	display: inline-block;
+	left: 0;
+	max-width: 415px;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+}
+figure a div {
+	background-color: rgba(19, 19, 19, 0.8);
+	height: 100%;
+	left: 0;
+	padding-top: 20%;
+	position: absolute;
+	top: -100%;
+	transition: all 500ms ease-in-out;
+	width: 100%;
+	z-index: 6;
+}
+figure a:hover div {
+	top: 0;
+}
+figure a div p {
+	background: url("../img/ext-link.png") no-repeat scroll right center / 1.15em;
+	display: inline-block;
+	padding-right: 50px;
+}
+
+footer {
+	background-color: rgba(167, 147, 126, 0.85);
+	flex-basis: 100%;
+	padding: 0.5em 1em;
+}
+
+@media screen and (max-width: 64.9999em) {
+	#navPrimary input[type=checkbox]:checked ~ ul {
+		border-top: 1px dotted #ecf0f1;
+		height: auto;
+		margin: 0 1.5em;
+		overflow: hidden;
+		padding: 1em 0;
+	}
+}
+@media screen and (min-width: 50em) {
+	header #profilePic {
+		height: 245px;
+		width: 245px;
+	}
+	header #profileDesc p {
+		font-size: 3.4em;
+	}
+	#CV .cv-title::before {
+		content: none;
+	}
+	#portfolio {
+		border: 1em solid rgba(167, 147, 126, 0.85);
+		border-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#portfolio section {
+		display: flex;
+	}
+	#portfolio section section {
+		width: 33.33%;
+	}
+	#portfolio h2 {
+		padding: 0 0.85em;
+		width: auto;
+	}
+	#portfolio header > h3 {
+		margin: auto;
+	}
+	#portfolio .portfolio-box {
+		max-width: 415px;
+		width: 85%;
+	}
+	footer {
+		padding: 0.425em 1.5em;
+	}
+}
+@media screen and (min-width: 65em) {
+	body {
+		font-size: 100%;
+	}
+	h1 {
+		font-size: 5.95em;
+	}
+	h3 {
+		font-weight: 400;
+	}
+	#navPrimary label,
+	#navPrimary input {
+		display: none;
+	}
+	#navPrimary ul {
+		display: flex;
+		height: auto;
+		justify-content: space-between;
+		list-style: none;
+		margin: 0 5em;
+	}
+	#navPrimary ul .hiddenElem {
+		display: none;
+	}
+	body, section {
+		display: flex;
+	}
+	aside p,
+	aside li {
+		font-size: 0.95em;
+	}
+	#CV section > section > header {
+		display: flex;
+	}
+	#CV section > section > header *:nth-child(2),
+	#CV section > section > header *:nth-child(4) {
+		text-align: right;
+	}
+}
+/*
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	body {
+		background: none #a7937e;
+	}
+	.bg-fixed {
+		display: block;
+		height: 100vh;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+	.bg-fixed ~ * {
+		z-index: 0;
+	}
+	body > header {
+		background: url("../img/skyline-mobile-sm.jpg") no-repeat scroll center top;
+		padding-bottom: 3em;
+	}
+	#portfolio {
+		padding-bottom: 70vh;
+	}
+	#portfolio .bg-fixed {
+		background: url("../img/map-mobile.jpg") no-repeat scroll center bottom;
+	}
+	#skills ul {
+		list-style-type: square;
+		margin-left: 1.5em;
+	}
+	#skills li {
+		font-weight: 400;
+	}
+	#skills meter {
+		border: none;
+		color: #a7937e;
+		font-weight: 300;
+		margin: 0;
+	}
+	figure,
+	figure + p {
+		margin-bottom: 1.5em;
+	}
+	figure a {
+		color: #ecf0f1;
+		text-decoration: none;
+	}
+	figure a:hover {
+		color: #cf000f;
+	}
+	figure a div {
+		background-color: #131313;
+		height: auto;
+		padding: initial;
+		position: relative;
+	}
+}
+
+@media screen and (min-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+	body > header {
+		background: url("../img/skyline-mobile-lg.jpg") no-repeat scroll center top;
+	}
+}*/

@@ -8,12 +8,105 @@
 </head>
 <body>
 <nav id="navPrimary">
-
+	<input type="checkbox" id="toggle">
+	<label for="toggle">Navigation</label>
+	<ul class="nav-items">
+		<li><a href="#profile">Summary</a></li>
+		<li><a href="#CV">Curriculum Vitae</a></li>
+		<li class="hiddenElem"><a href="#misc">Skills &amp; Activities</a></li>
+		<li><a href="#portfolio">My Portfolio</a></li>
+	</ul>
 </nav>
 
 <header id="profile">
-
+	<div id="profileDesc">
+		<h1>Mickey Perry</h1>
+		<p>Architectual Technologist Student</p>
+	</div>
+	<div id="profilePic"></div>
 </header>
+
+<main>
+	<article id="CV">
+		<section id="education">
+			<header>
+				<h2>Education</h2>
+			</header>
+			<section>
+				<header>
+					<h3>Sheridan College</h3>
+					<p class="cv-city">Mississauga, ON</p>
+					<p class="cv-title">Architectural Technology</p>
+					<p class="cv-length">September 2022 &ndash; Present</p>
+				</header>
+			</section>
+		</section>
+		
+		<section id="experience">
+			<header>
+				<h2>Experience</h2>
+			</header>
+			<section>
+				<header>
+					<h3>Spider Electric</h3>
+					<p class="cv-city">Calgary, AB</p>
+					<p class="cv-title">Electrician - First Year Apprentice</p>
+					<p class="cv-length">2020</p>
+				</header>
+
+				<p>Installed junction boxes, light and alarm fixtures, receptacles, faceplates and low voltage/data faceplates in multi-residential and senior homes projects.</p>
+			</section>
+
+			<section>
+				<header>
+					<h3>Amelco Electric</h3>
+					<p class="cv-city">Calgary, AB</p>
+					<p class="cv-title">Electrician - First Year Apprentice</p>
+					<p class="cv-length">2019</p>
+				</header>
+
+				<p>Installed underground PVC conduit and junction boxes.</p>
+			</section>
+		</section>
+	</article>
+	<aside id="misc">
+		<section id="skills">
+			<h2>Skills</h2>
+			<ul>
+				<li><meter min="0" max="3" value="3"> Expert		&ndash;</meter> Markdown</li>
+				<li><meter min="0" max="3" value="2"> Intermediate	&ndash;</meter> HTML Template Processors</li>
+				<li><meter min="0" max="3" value="1"> Beginner		&ndash;</meter> PHP</li>
+		</section>
+	</aside>
+
+	<article id="portfolio">
+		<div class="bg-fixed"></div>
+		<header>
+			<h2>Portfolio</h2>
+		</header>
+
+		<section>
+			<header>
+				<h3>Projects</h3>
+			</header>
+			<section>
+				<div class="portfolio-box">
+					<h3>Infrastructure Ontario</h3>
+					<figure>
+						<a href="http://www.infrastructureontario.ca/" target="_blank">
+							<img src="img/portfolio/io.jpg" alt="Infrastructure Ontario">
+							<div><p>View Project</p></div>
+						</a>
+					</figure>
+
+					<p>Developed ASP templates for use in an Ektron-based content management system. Leveraging Twitter Bootstrap, created a base style system based on in-house style guide, derived PSDs, and wireframe designs.</p>
+					<p><strong>Technologies:</strong> HTML, CSS, jQuery, ASP.Net, Twitter Bootstrap</p>
+				</div>
+			</section>
+		</section>
+	</article>
+</main>
+<footer><p>&copy; 2022 &ndash; 2023; all rights reserved.</p></footer>
 
 <script type="text/javascript" src="js/code.js"></script>
 </body>
