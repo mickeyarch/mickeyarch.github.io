@@ -10,7 +10,8 @@ html {
 	line-height: 1;
 }
 body {
-	background: url("../img/map.jpg") no-repeat fixed center bottom / cover #a7937e;
+	/*background: url("../img/map.jpg") no-repeat fixed center bottom / cover #bfb3a6;*/
+	background: url("../img/skyline.jpg") no-repeat fixed center bottom / cover #bfb3a6;
 	flex-wrap: wrap;
 	font-size: 75%;
 }
@@ -50,7 +51,7 @@ a {
 }
 
 #navPrimary {
-	background-color: #a7937e;
+	background-color: #bfb3a6;
 	box-sizing: border-box;
 	position: fixed;
 	width: 100%;
@@ -88,9 +89,9 @@ a {
 }
 
 body > header {
-	background: url("../img/skyline.jpg") no-repeat fixed center top / cover #a7937e;
-	border: 1em solid #a7937e;
-	border-top: 3em solid #a7937e;
+	background: url("../img/td-centre.jpg") no-repeat fixed center top / cover #bfb3a6;
+	border: 1em solid #bfb3a6;
+	border-top: 3em solid #bfb3a6;
 	flex-basis: 100%;
 	min-height: 100vh;
 	padding-top: 3em;
@@ -131,7 +132,7 @@ aside {
 }
 #skills meter {
 	background: none;
-	border-right: 1px solid #a7937e;
+	border-right: 1px solid #bfb3a6;
 	height: 15px;
 	margin-right: 15px;
 	width: 70px;
@@ -141,14 +142,14 @@ aside {
 }
 #skills meter:-moz-meter-optimum::-moz-meter-bar {
 	background: none;
-	background-color: #a7937e;
+	background-color: #bfb3a6;
 }
 #skills meter::-webkit-meter-bar {
 	background: none;
 }
 #skills meter::-webkit-meter-optimum-value {
 	background: none;
-	background-color: #a7937e;
+	background-color: #bfb3a6;
 }
 #skills meter span {
 	display: inline-block;
@@ -287,7 +288,7 @@ figure a div p {
 }
 
 footer {
-	background-color: rgba(167, 147, 126, 0.85);
+	background-color: #bfb3a6bb; /*rgba(167, 147, 126, 0.85);*/
 	flex-basis: 100%;
 	padding: 0.5em 1em;
 }
@@ -313,7 +314,7 @@ footer {
 		content: none;
 	}
 	#portfolio {
-		border: 1em solid rgba(167, 147, 126, 0.85);
+		border: 1em solid #bfb3a6bb;
 		border-bottom: 0;
 		padding-left: 0;
 		padding-right: 0;
@@ -381,7 +382,7 @@ footer {
 /*
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
 	body {
-		background: none #a7937e;
+		background: none #bfb3a6;
 	}
 	.bg-fixed {
 		display: block;
@@ -414,7 +415,7 @@ footer {
 	}
 	#skills meter {
 		border: none;
-		color: #a7937e;
+		color: #bfb3a6;
 		font-weight: 300;
 		margin: 0;
 	}
