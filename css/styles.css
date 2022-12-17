@@ -10,7 +10,6 @@ html {
 	line-height: 1;
 }
 body {
-	/*background: url("../img/map.jpg") no-repeat fixed center bottom / cover #bfb3a6;*/
 	background: url("../img/skyline.jpg") no-repeat fixed center bottom / cover #bfb3a6;
 	flex-wrap: wrap;
 	font-size: 75%;
@@ -288,7 +287,7 @@ figure a div p {
 }
 
 footer {
-	background-color: #bfb3a6bb; /*rgba(167, 147, 126, 0.85);*/
+	background-color: #bfb3a6bb;
 	flex-basis: 100%;
 	padding: 0.5em 1em;
 }
@@ -367,6 +366,10 @@ footer {
 	body, section {
 		display: flex;
 	}
+	main {
+		display: flex;
+		flex-wrap: wrap;
+	}
 	aside p,
 	aside li {
 		font-size: 0.95em;
@@ -379,6 +382,7 @@ footer {
 		text-align: right;
 	}
 }
+
 /*
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
 	body {
