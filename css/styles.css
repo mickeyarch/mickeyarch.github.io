@@ -83,10 +83,6 @@ a {
 	color: #ecf0f1
 }
 
-.bg-fixed {
-	display: none;
-}
-
 body > header {
 	background: url("../img/td-centre.jpg") no-repeat fixed center top / cover #bfb3a6;
 	border: 1em solid #bfb3a6;
@@ -119,7 +115,7 @@ article {
 	flex-basis: 60%;
 }
 aside {
-	background-color: #131313;
+	background-color: #292929;
 	border: 1em solid #000000;
 	color: #ECF0F1;
 	flex-basis: 40%;
@@ -219,7 +215,6 @@ aside > section {
 }
 #portfolio header > h3 {
 	background-color: rgba(236, 240, 241, 0.85);
-	width: 98%;
 }
 #portfolio section {
 	padding: 0;
@@ -231,10 +226,10 @@ aside > section {
 	width: 100%;
 }
 #portfolio .portfolio-box {
-	background-color: rgba(236, 240, 241, 0.95);
+	background-color: rgba(236, 240, 241, 0.85);
 	box-sizing: content-box;
 	margin: 1.25em auto;
-	padding: 0.5em 1em 1em;
+	padding: 0.5em 0 0;
 	text-align: center;
 }
 
@@ -265,7 +260,7 @@ figure a div {
 	background-color: rgba(19, 19, 19, 0.8);
 	height: 100%;
 	left: 0;
-	padding-top: 20%;
+	padding-top: 30%;
 	position: absolute;
 	top: -100%;
 	transition: all 500ms ease-in-out;
@@ -287,6 +282,7 @@ footer {
 	padding: 0.5em 1em;
 }
 
+
 @media screen and (max-width: 64.9999em) {
 	#navPrimary input[type=checkbox]:checked ~ ul {
 		border-top: 1px dotted #ecf0f1;
@@ -297,9 +293,6 @@ footer {
 	}
 }
 @media screen and (min-width: 50em) {
-	body {
-		background-image: url("../img/skyline-mobile-lg.jpg");
-	}
 	header #profilePic {
 		height: 245px;
 		width: 245px;
@@ -307,44 +300,48 @@ footer {
 	header #profileDesc p {
 		font-size: 3.4em;
 	}
+
 	#portfolio {
 		border: 1em solid #bfb3a6bb;
 		border-bottom: 0;
-		padding-left: 0;
-		padding-right: 0;
 	}
 	#portfolio section {
 		display: flex;
 	}
-	/*#portfolio section section {
-		width: 33.33%;
-	}*/
-	#portfolio h2 {
-		padding: 0 0.85em;
-		width: auto;
-	}
-	#portfolio header > h3 {
-		margin: auto;
-	}
 	#portfolio .portfolio-box {
-		max-width: 415px;
-		width: 85%;
+		padding: 0;
+		width: 49%;
 	}
+
 	footer {
 		padding: 0.425em 1.5em;
 	}
 }
-@media screen and (min-width: 65em) {
+@media screen and (min-width: 75em) {
 	body {
 		background-image: url("../img/skyline.jpg");
 		font-size: 100%;
 	}
+	
+	body, section {
+		display: flex;
+	}
+	main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	aside p,
+	aside li {
+		font-size: 0.95em;
+	}
+
 	h1 {
 		font-size: 5.95em;
 	}
 	h3 {
 		font-weight: 400;
 	}
+
 	#navPrimary label,
 	#navPrimary input {
 		display: none;
@@ -359,23 +356,17 @@ footer {
 	#navPrimary ul .hiddenElem {
 		display: none;
 	}
-	body, section {
-		display: flex;
-	}
-	main {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	aside p,
-	aside li {
-		font-size: 0.95em;
-	}
+
 	#CV section > section > header {
 		display: flex;
 	}
 	#CV section > section > header *:nth-child(2),
 	#CV section > section > header *:nth-child(4) {
 		text-align: right;
+	}
+
+	#portfolio .portfolio-box {
+		width: 33%;
 	}
 }
 
