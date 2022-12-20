@@ -233,7 +233,7 @@ aside > section {
 #portfolio .portfolio-box {
 	background-color: rgba(236, 240, 241, 0.95);
 	box-sizing: content-box;
-	margin: auto;
+	margin: 1.25em auto;
 	padding: 0.5em 1em 1em;
 	text-align: center;
 }
@@ -259,7 +259,6 @@ figure a {
 	position: relative;
 	text-decoration: none;
 	top: 0;
-	width: 100%;
 	z-index: 5;
 }
 figure a div {
@@ -288,11 +287,6 @@ footer {
 	padding: 0.5em 1em;
 }
 
-/*@media screen and (min-width: 30em) {
-	body {
-		background: url("../img/skyline-mobile-lg.jpg") no-repeat scroll center top;
-	}
-}*/
 @media screen and (max-width: 64.9999em) {
 	#navPrimary input[type=checkbox]:checked ~ ul {
 		border-top: 1px dotted #ecf0f1;
@@ -322,9 +316,9 @@ footer {
 	#portfolio section {
 		display: flex;
 	}
-	#portfolio section section {
+	/*#portfolio section section {
 		width: 33.33%;
-	}
+	}*/
 	#portfolio h2 {
 		padding: 0 0.85em;
 		width: auto;
