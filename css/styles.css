@@ -10,7 +10,7 @@ html {
 	line-height: 1;
 }
 body {
-	background: url("../img/skyline-mobile-sm.jpg") no-repeat fixed center bottom / cover #bfb3a6;
+	background: url("../img/skyline-sm.jpg") no-repeat fixed center bottom / cover #bfb3a6;
 	flex-wrap: wrap;
 	font-size: 75%;
 }
@@ -216,20 +216,10 @@ aside > section {
 #portfolio header > h3 {
 	background-color: rgba(236, 240, 241, 0.85);
 }
-#portfolio section {
-	padding: 0;
-}
-#portfolio section section {
-	flex-basis: auto;
-	padding-bottom: 1em;
-	text-align: justify;
-	width: 100%;
-}
 #portfolio .portfolio-box {
 	background-color: rgba(236, 240, 241, 0.85);
-	box-sizing: content-box;
 	margin: 1.25em auto;
-	padding: 0.5em 0 0;
+	padding: 0.5em;
 	text-align: center;
 }
 
@@ -307,9 +297,12 @@ footer {
 	}
 	#portfolio section {
 		display: flex;
+		align-items: stretch;
+		flex-basis: auto;
+		text-align: justify;
+		width: 100%;
 	}
 	#portfolio .portfolio-box {
-		padding: 0;
 		width: 49%;
 	}
 
@@ -369,63 +362,10 @@ footer {
 		width: 33%;
 	}
 }
-
 /*
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-pixel-ratio: 2) and (min-resolution: 120dpi) {
 	body {
-		background: none #bfb3a6;
-	}
-	.bg-fixed {
-		display: block;
-		height: 100vh;
-		left: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: -1;
-	}
-	.bg-fixed ~ * {
-		z-index: 0;
-	}
-	body > header {
-		background: url("../img/skyline-mobile-sm.jpg") no-repeat scroll center top;
-		padding-bottom: 3em;
-	}
-	#portfolio {
-		padding-bottom: 70vh;
-	}
-	#portfolio .bg-fixed {
-		background: url("../img/map-mobile.jpg") no-repeat scroll center bottom;
-	}
-	#skills ul {
-		list-style-type: square;
-		margin-left: 1.5em;
-	}
-	#skills li {
-		font-weight: 400;
-	}
-	#skills meter {
-		border: none;
-		color: #bfb3a6;
-		font-weight: 300;
-		margin: 0;
-	}
-	figure,
-	figure + p {
-		margin-bottom: 1.5em;
-	}
-	figure a {
-		color: #ecf0f1;
-		text-decoration: none;
-	}
-	figure a:hover {
-		color: #cf000f;
-	}
-	figure a div {
-		background-color: #131313;
-		height: auto;
-		padding: initial;
-		position: relative;
+		border: 15px solid red;
 	}
 }
 */
