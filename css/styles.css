@@ -90,6 +90,7 @@ body > header {
 	min-height: 100vh;
 	padding-top: 3em;
 	text-align: center;
+	text-shadow: 0 1px 1px #ecf0f1;
 }
 header #profilePic {
 	background: url("../img/profile.png") no-repeat scroll center top / cover;
@@ -102,7 +103,7 @@ header #profilePic {
 header #profileDesc p {
 	color: #ecf0f1;
 	font-size: 2.55em;
-	text-shadow: 0 1px 1px #131313;
+	text-shadow: 0 1px 1px #292929;
 }
 
 article,
@@ -117,7 +118,7 @@ article {
 aside {
 	background-color: #292929;
 	border: 1em solid #000000;
-	color: #ECF0F1;
+	color: #ecf0f1;
 	flex-basis: 40%;
 }
 #skills ul {
@@ -294,6 +295,7 @@ footer {
 	#portfolio {
 		border: 1em solid #bfb3a6bb;
 		border-bottom: 0;
+		padding-bottom: 0;
 	}
 	#portfolio section {
 		display: flex;
@@ -318,9 +320,6 @@ footer {
 		font-size: 100%;
 	}
 	
-	body, section {
-		display: flex;
-	}
 	main {
 		display: flex;
 		flex-wrap: wrap;
