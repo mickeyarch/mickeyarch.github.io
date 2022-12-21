@@ -11,6 +11,7 @@ html {
 }
 body {
 	background: url("../img/skyline-sm.jpg") no-repeat fixed center bottom / cover #bfb3a6;
+	color: #292929;
 	flex-wrap: wrap;
 	font-size: 75%;
 }
@@ -45,7 +46,6 @@ p, li, label {
 	font-weight: 300;
 }
 a {
-	color: #cf000f;
 	display: inline-block;
 }
 
@@ -72,7 +72,7 @@ a {
 }
 #navPrimary label,
 #navPrimary a {
-	color: #131313;
+	color: #292929;
 	display: block;
 	font-size: 1.35em;
 	height: 2em;
@@ -219,7 +219,7 @@ aside > section {
 #portfolio .portfolio-box {
 	background-color: rgba(236, 240, 241, 0.85);
 	margin: 1.25em auto;
-	padding: 0.5em;
+	padding: 0.5em 1.25em;
 	text-align: center;
 }
 
@@ -364,10 +364,3 @@ footer {
 		width: 33%;
 	}
 }
-/*
-@media screen and (min-device-pixel-ratio: 2) and (min-resolution: 120dpi) {
-	body {
-		border: 15px solid red;
-	}
-}
-*/
