@@ -298,12 +298,15 @@ footer {
 	#portfolio section {
 		display: flex;
 		align-items: stretch;
-		flex-basis: auto;
-		text-align: justify;
 		width: 100%;
 	}
 	#portfolio .portfolio-box {
+		flex-basis: auto;
 		width: 49%;
+	}
+	#portfolio .portfolio-box h3,
+	#portfolio .portfolio-box p {
+		text-align: justify;
 	}
 
 	footer {
