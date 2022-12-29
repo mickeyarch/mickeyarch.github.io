@@ -38,7 +38,7 @@ h3 {
 }
 ul {
 	list-style-type: square;
-	margin-left: 1.5em;
+	margin-left: 1em;
 }
 p, li, label {
 	font-family: "Open Sans", sans-serif;
@@ -122,10 +122,12 @@ aside {
 	flex-basis: 40%;
 }
 #skills ul {
-	list-style: none;
-	margin: 0;
+	/* list-style: none; ADD AT LATER DATE */
+	/* margin: 0; ADD AT LATER DATE */
 }
 #skills meter {
+	display: none; /* REMOVE AT LATER DATE */
+
 	background: none;
 	border-right: 1px solid #bfb3a6;
 	height: 15px;
