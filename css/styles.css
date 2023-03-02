@@ -122,12 +122,10 @@ aside {
 	flex-basis: 40%;
 }
 #skills ul {
-	/* list-style: none; ADD AT LATER DATE */
-	/* margin: 0; ADD AT LATER DATE */
+	list-style: none;
+	margin: 0;
 }
 #skills meter {
-	display: none; /* REMOVE AT LATER DATE */
-
 	background: none;
 	border-right: 1px solid #bfb3a6;
 	height: 15px;
